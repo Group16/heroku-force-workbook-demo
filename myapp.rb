@@ -40,13 +40,22 @@ class MyApp < Sinatra::Base
     end
 
   end
+  date = Time.now
 
+  yr = date.year
+  mnt = date.month
+  dy = date.day
+
+  mntt =mnt.to_s.rjust(2,'0')
+  dyy = dy.to_s.rjust(2,'0')
+
+  d = "#{yr}-#{mntt}-#{dyy}"
 
   get '/' do
     logger.info "Visited home page"
      @accounts1 = client.query("SELECT FirstName,LastName,MobilePhone,Email FROM User WHERE Id = '00580000003lR2a' OR Id = '00580000003lR5B'
                     OR Id = '00580000003lQuG' OR Id = '005340000082AzV' OR Id = '00580000003muAa' ")  
-     @accounts2 = clientt.query("SELECT owner.name from event where owner.title in ('cloud services engineer','cloud service engineer') group by owner.name")
+     @accounts2 = clientt.query("SELECT owner.name from event where owner.title in ('cloud services engineer','cloud service engineer') and startdatetime>=#{d}T07:29:00.000Z and enddatetime<=#{d}T17:01:00.000Z")
     erb :index
   end
 
