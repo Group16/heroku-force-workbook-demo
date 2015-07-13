@@ -38,6 +38,13 @@ class MyApp < Sinatra::Base
                             client_id:     ENV['SALESFORCE_KEY'],
                             client_secret: ENV['SALESFORCE_SECRET']
     end
+    def clienttt
+      @client ||= Force.new instance_url:  session['instance_url'], 
+                            oauth_token:   session['token'],
+                            refresh_token: session['refresh_token'],
+                            client_id:     ENV['SALESFORCE_KEY'],
+                            client_secret: ENV['SALESFORCE_SECRET']
+    end
 
   end
   date = Time.now
@@ -56,6 +63,8 @@ class MyApp < Sinatra::Base
      @accounts1 = client.query("SELECT FirstName,LastName,MobilePhone,Email FROM User WHERE Id = '00580000003lR2a' OR Id = '00580000003lR5B'
                     OR Id = '00580000003lQuG' OR Id = '005340000082AzV' OR Id = '00580000003muAa' ")  
      @accounts2 = clientt.query("SELECT owner.name from event where owner.title in ('cloud services engineer','cloud service engineer','Cloud Services Architect') and startdatetime>=#{d}T07:29:00.000Z and enddatetime<=#{d}T17:01:00.000Z and showas = 'busy'")
+     @accounts3 = clienttt.query("SELECT owner.name from event where owner.title in ('Technical Incident Engineer - vCHS','Technical Incident Engineer - vCloud','Cloud Services Engineer',' Technical Support Engineer') and startdatetime>=#{d}T00:29:00.000Z and enddatetime<=#{d}T17:09:01.000Z and showas = 'busy'")
+
     erb :index
   end
 
