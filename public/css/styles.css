@@ -1,4 +1,9 @@
 
+body {
+    background: linear-gradient(black,#fff); /* Standard syntax (must be last) */
+}
+
+
 #man{
     background: #CCFFCC ;
   
