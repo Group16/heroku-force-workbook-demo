@@ -6,8 +6,6 @@ body {
     background: linear-gradient(to bottom,black,#fff); /* Standard syntax (must be last) */
 }
 
-background-repeat: no-repeat;
-background-attachment: fixed;
 #man{
     background: #CCFFCC ;
   
