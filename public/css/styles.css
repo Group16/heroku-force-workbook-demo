@@ -34,33 +34,3 @@ caption{
 color:#00FF7F;
 }
 
-
-table {
-  border-collapse: collapse;
-  font-family: arial;
-}
-
-td,
-th {
-  width: auto;
-  margin: 2px;
-  padding: 3px;
-  text-align: left;
-  border: 1px solid grey;
-}
-
-.noborders {
-  border: 0;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
