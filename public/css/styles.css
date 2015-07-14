@@ -27,9 +27,9 @@ body {
 }
 
 caption{
-    color: green;
+    color: #00FF7F;
 }
 
 .navbar-nav,.navbar-inverse,.navbar-toggle,.navbar-right{
-color:green;
+color:#00FF7F;
 }
