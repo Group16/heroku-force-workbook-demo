@@ -9,9 +9,15 @@
 </head>
 
 <body>
-
+ <div class = "navbar-inverse navbar-static-top">
+				<div class = "container">
+<div>
 <caption>Current date and time: <%= Time.now %></caption>
-<br>
+</div>
+  </div>
+			</div>
+		
+
 
 <table id = "man" border="1" style="width:50%">
  <caption>Manager's Information</caption>
@@ -55,6 +61,12 @@
       </tr>
   <% end %>
 </table>
+<div class = "navbar navbar-default navbar-fixed-bottom">
+			    <div class = "container">
+				    <p class ="navbar-text">Copyright &copy; 2015 VMware, Inc. All rights reserved.</p>
+				</div>
+			
+			</div>
 
 <!-- jQuery via Google + local fallback, see h5bp.com -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
