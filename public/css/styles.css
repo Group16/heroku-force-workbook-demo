@@ -9,10 +9,23 @@ body {
     background: -moz-linear-gradient(black,#fff); /* For Firefox 3.6 to 15 */
     background: linear-gradient(black,#fff); /* Standard syntax (must be last) */
 }
-#blah{
-    background: white ;
+#man{
+    background: #F0F8FF ;
   
 }
+#cork{
+    background: #F0F8FF ;
+  
+}
+#bangalore{
+    background: #FAEBD7 ;
+  
+}
+#broomfield{
+    background: #FAEBD7 ;
+  
+}
+
 h3{
     color: green;
 }
