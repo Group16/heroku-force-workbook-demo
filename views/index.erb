@@ -79,8 +79,13 @@
 			    <div class = "container">
 				    <p class ="navbar-text">Copyright &copy; 2015 VMware, Inc. All rights reserved.</p>
 				</div>
-			<%= button_to "Compare Excel", :action => session.clear  %>
-			</div>
+				
+				</div>
+			<%= button_to "new", :action => session.clear  %>
+			<form method="post" action="/controller/new" class="button_to">
+                        <input value="New" type="submit" />
+                        </form>
+		
 
 
 
