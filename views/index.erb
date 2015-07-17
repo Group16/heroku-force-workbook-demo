@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- Styles -->
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-theme.css" rel="stylesheet">
+
+<link href="/css/styles.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+ <div class = "navbar-inverse navbar-static-top">
+				<div class = "container">
+<div>
+	</br>
+<caption>Current date and time: <%= Time.now %></caption>
+</br>
+</div>
+  </div>
+			</div>
+		
+
+
+<table id = "man" border="1" style="width:50%" >
+ <caption>  Manager's Information</caption>
+ <tr><th>First Name</th><th>Last Name</th><th>Phone</th><th>Email</th></tr>
+  <% @accounts1.each do |account| %>
+      <tr>
+        <td><%= account.FirstName %></td>
+        <td><%= account.LastName %></td>
+        <td><%= account.MobilePhone %></td>
+        <td><%= account.Email %></td>
+      </tr>
+<% end %>
+</table>  
+
+<div style= "width: 100%">
+<div style="float: left;">
+<table id ="cork" border="1" style = "width:95%">
+  <caption>  Cork</caption>
+  <tr><th>Avaiable for SR's</th></tr>
+  <% @accounts2.each do |account| %>
+      <tr>
+        <td><%= account.Owner.Name %></td>
+      </tr>
+  <% end %>
+</table>
+</div>
+
+<div style="float: left;">
+<table id="bangalore" border="1" style = "width:95%">
+  <caption>Bangalore</caption>
+  <tr><th>Avaiable for SR's</th></tr>
+  <% @accounts3.each do |account| %>
+      <tr>
+        <td><%= account.Owner.Name %></td>
+      </tr>
+  <% end %>
+</table>
+</div>
+<div style ="float:left;">
+<table id ="broomfield" border="1">
+  <caption>Broomfield</caption>
+  <tr><th>Avaiable for SR's</th></tr>
+  <% @accounts4.each do |account| %>
+      <tr>
+        <td><%= account.Owner.Name %></td>
+      </tr>
+  <% end %>
+</table>
+</div>
+</div>
+</br></br></br></br></br>
+
+<div class = "navbar navbar-default navbar-fixed-bottom">
+			    <div class = "container">
+				    <p class ="navbar-text">Copyright &copy; 2015 VMware, Inc. All rights reserved.</p>
+				</div>
+				
+				</div>
+		
+<!-- COULD BREAK  -->
+
+
+<!-- Bootstrap jQuery Plugins, compiled and minified -->
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
