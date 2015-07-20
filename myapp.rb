@@ -102,6 +102,7 @@ class MyApp < Sinatra::Base
   end
 
   error Force::UnauthorizedError do
+    session.clear
     redirect "/auth/salesforce"
   end
 
