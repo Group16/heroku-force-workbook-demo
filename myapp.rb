@@ -113,6 +113,3 @@ class MyApp < Sinatra::Base
 
 end
 
-<%= button_to "New", action: "new" %>
-<form method="post" action="/controller/new" class="button_to"> <div><input value="New" type="submit" /></div>
-</form>
