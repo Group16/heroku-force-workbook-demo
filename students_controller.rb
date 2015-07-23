@@ -1,11 +1,14 @@
 class StudentsController < ApplicationController
-    Pick Date 
-<hr>
-<% form_for @student do |f| -%>
-   DATE: <%= f.text_field :DateRequired %><br />
-   SUBMIT: <%= f.submit%>		
-<% end -%>
-</hr>
+    
+def new 
+    @student = Student.new
+  end
+  def create
+    @student = Student.new (params[:student])
+    if @student.save
+      redirect_to new_student_path
+  end
+  
 
     
 end
