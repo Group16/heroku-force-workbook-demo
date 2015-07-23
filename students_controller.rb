@@ -1,4 +1,4 @@
-class StudentsController < ApplicationController
+class StudentsController < Sinatra::Base 
     
 def new 
     @student = Student.new
