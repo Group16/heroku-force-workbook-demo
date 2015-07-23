@@ -6,4 +6,4 @@ gem 'thin'
 gem 'sinatra'
 gem 'omniauth-salesforce'
 gem 'force'
-gem 'jquery-ui-rails'
+
