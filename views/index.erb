@@ -15,9 +15,7 @@
     <script>
   $(function() {
     $( "#datepicker" ).datepicker();
-    $( "#format" ).change(function() {
-      $( "#datepicker" ).datepicker( "option", "dateFormat",ISO 8601 - yy-mm-dd );
-    });
+    { dateFormat: "yy-mm-dd" }
   });
   </script>
 </head>
