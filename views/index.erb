@@ -14,7 +14,7 @@
     
     <script>
   $(function() {
-    $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker(yy-mm-dd);
     $( "#format" ).change(function() {
       $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
     });
@@ -44,16 +44,8 @@
 </table>  
 
  <input type="text" id="datepicker" placeholder= "Pick Date">
- <p>Format options:<br>
-  <select id="format">
-    <p>Format options:<br>
-  <select id="format">
-   
-    <option value="yy-mm-dd">Default - yy-mm-dd</option>
 
-  </select>
-</p>
- 
+
 <div style= "width: 100%">
 <div style="float: left;">
 <table id ="cork" border="1" style = "width:95%">
