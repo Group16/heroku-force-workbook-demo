@@ -36,6 +36,10 @@ td{
   
 }
 
+#ih{
+    white-space: pre;
+}
+
 caption{
     color: #00FF7F;
      padding-left: 9px;
