@@ -15,9 +15,9 @@
     <script>
  $("#button1").button({disabled: false});
 
-  	 var x = $( "#datepicker" ).datepicker( "getDate" );
-         var weekno = (x.getWeek());
-         var mes = (x.getMonth());
+x = $( "#datepicker" ).datepicker( "getDate" );
+weekno = (x.getWeek());
+mes = (x.getMonth());
 $(function() {
 $("#button1").click(function(event){
 alert(weekno);
