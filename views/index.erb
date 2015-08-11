@@ -19,20 +19,19 @@
     
  $("#button1").button({disabled: false});
 
-
-$(function() {
-$("#button1").click(function(event){
-alert(weekno);
-});
-});
 jQuery(document).ready(function(){
 
 x = $( "#datepicker" ).datepicker();
 weekno = (x.getWeek());
 mes = (x.getMonth());	
-	
-	
+$(function() {
+$("#button1").click(function(event){
+alert(weekno);
 });
+});
+	
+	
+}); // end od document ready
 
   </script>
 </head>
