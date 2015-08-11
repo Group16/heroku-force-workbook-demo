@@ -40,6 +40,14 @@ $(function() {
 });
 }); // end of document ready
 
+$.ajax({
+    url: "/myapp.rb",
+    type: "POST",
+    data: {subcomment: {
+             field: dat}},
+    success: function(resp){ }
+});
+
   </script>
 </head>
 
