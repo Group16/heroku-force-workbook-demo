@@ -67,6 +67,15 @@ class MyApp < Sinatra::Base
   dyy = dy.to_s.rjust(2,'0')
 
   d = "#{yr}-#{mntt}-#{dyy}"
+  
+  def create
+  @sub_comment = SubComment.new params['subcomment']
+  if @sub_comment.save
+    render :json => { } # send back any data if necessary
+  else
+    render :json => { }, :status => 500
+  end
+end
 
   get '/' do
     logger.info "Visited home page"
