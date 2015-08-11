@@ -17,9 +17,7 @@
 $("#button1").button({disabled: false});
 $(function() {
 $("#button1").click(function(event){
-var x = $( "#tab2_kalendar" ).datepicker( "getDate" );
-var weekno = (x.getWeek());
-var mes = (x.getMonth());
+
 
 alert("weekno");
 });
@@ -27,6 +25,9 @@ alert("weekno");
 
 jQuery(document).ready(function(){
 $( "#datepicker" ).datepicker();
+var x = $( "#tab2_kalendar" ).datepicker( "getDate" );
+var weekno = (x.getWeek());
+var mes = (x.getMonth());
 }); // end of document ready
 
   </script>
