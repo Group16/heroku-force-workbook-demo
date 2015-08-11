@@ -17,7 +17,7 @@
 $("#button1").button({disabled: false});
 $(function() {
 $("#button1").click(function(event){
-x = $( "#datepicker" ).datepicker( 'getDate' );
+x = $( "#datepicker" ).datepicker( "getDate" );
 //weekno = (x.getWeek());
 //mes = (x.getMonth());
 
@@ -28,7 +28,9 @@ alert(x.getWeek());
 $(document).ready(function() {
 // Datepicker Popups calender to Choose date.
 $(function() {
-$("#datepicker").datepicker();
+ $( "#datepicker" ).datepicker({
+            onSelect: function(dateText, inst) {alert($.datepicker.iso8601Week(new Date(dateText)))}
+        });
 
 });
 }); // end of document ready
