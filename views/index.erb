@@ -29,10 +29,9 @@ $(document).ready(function() {
 // Datepicker Popups calender to Choose date.
 $(function() {
  $('#datepicker').datepicker({
+ 		    dateFormat: "yy-mm-dd",
                     onSelect: function(dat,inst){
-                        var week=$.datepicker.iso8601Week(new Date(dat));
-                        $('#datepicker').val($.datepicker.formatDate('yy-','mm-','dd')
-                       
+                    	
                         alert(dat);
                     }
 });
