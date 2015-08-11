@@ -14,10 +14,6 @@
     
     <script>
 $("#button1").button({disabled: false});
-$( "#datepicker" ).datepicker();
-jQuery(document).ready(function(){
-
-	
 $(function() {
 $("#button1").click(function(event){
 var x = $( "#datepicker" ).datepicker();
@@ -27,8 +23,9 @@ var mes = (x.getMonth());
 alert(weekno);
 });
 });
-	
-	
+
+jQuery(document).ready(function(){
+
 }); // end of document ready
 
   </script>
