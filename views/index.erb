@@ -21,16 +21,20 @@ x = $( "#datepicker" ).datepicker( "getDate" );
 //weekno = (x.getWeek());
 //mes = (x.getMonth());
 
-alert(x.getWeek());
+//alert(x.getWeek());
 });
 });
 
 $(document).ready(function() {
 // Datepicker Popups calender to Choose date.
 $(function() {
- $( "#datepicker" ).datepicker({
-            onSelect: function(dateText, inst) {alert($.datepicker.iso8601Week(new Date(dateText)))}
-        });
+ $('#datepicker').datepicker({
+                    onSelect: function(dat,inst){
+                        var week=$.datepicker.iso8601Week(new Date(dat));
+                        $('#datepicker').val($.datepicker.formatDate('yy-',new Date(dat))+(week<10?'0':'')+week)
+                    }
+});
+
 
 });
 }); // end of document ready
