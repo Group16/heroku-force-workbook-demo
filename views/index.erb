@@ -13,11 +13,17 @@
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     
     <script>
- 
-  var x = $( "#datepicker" ).datepicker( "getDate" );
+ $("#button1").button({disabled: false});
+
+  	 var x = $( "#datepicker" ).datepicker( "getDate" );
          var weekno = (x.getWeek());
          var mes = (x.getMonth());
+$(function() {
+$("#button1").click(function(event){
 alert(weekno);
+});
+});
+
   </script>
 </head>
 
@@ -49,7 +55,7 @@ alert(weekno);
         </div>
     
         <div class = "form-group">
-            <button type= "submit" class = "btn btn-primary" >Submit</button>
+            <button type= "submit" id="button1" class = "btn btn-primary" style="position:relative;left:50px;" >Submit</button>
         </div>
         </div>
     </form>
