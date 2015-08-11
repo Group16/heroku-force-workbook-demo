@@ -13,15 +13,25 @@
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     
     <script>
+    var x;
+    var weekno;
+    var mes;
+    
  $("#button1").button({disabled: false});
 
-x = $( "#datepicker" ).datepicker( "getDate" );
-weekno = (x.getWeek());
-mes = (x.getMonth());
+
 $(function() {
 $("#button1").click(function(event){
 alert("weekno");
 });
+});
+jQuery(document).ready(function(){
+
+x = $( "#datepicker" ).datepicker();
+weekno = (x.getWeek());
+mes = (x.getMonth());	
+	
+	
 });
 
   </script>
