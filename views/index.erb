@@ -31,7 +31,7 @@ $(function() {
  $('#datepicker').datepicker({
                     onSelect: function(dat,inst){
                         var week=$.datepicker.iso8601Week(new Date(dat));
-                        $('#datepicker').val($.datepicker.formatDate('yy-',new Date(dat))+(week<10?'0':'')+week)
+                        $('#datepicker').val($.datepicker.formatDate('yy-','mm-','dd')
                     }
 });
 
