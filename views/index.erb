@@ -13,12 +13,11 @@
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     
     <script>
-  $(function() {
-    $( "#datepicker" ).datepicker(
-    	{ dateFormat: "yy-mm-dd" }
-    	);
-    
-  });
+ 
+  var x = $( "#datepicker" ).datepicker( "getDate" );
+         var weekno = (x.getWeek());
+         var mes = (x.getMonth());
+alert(weekno);
   </script>
 </head>
 
