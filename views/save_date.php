@@ -1,2 +1,4 @@
-$d = $_POST["dat"];
-echo "test";
+<?php
+$d = $_GET["dat"];
+echo $d;
+?>
