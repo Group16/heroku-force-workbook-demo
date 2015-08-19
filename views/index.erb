@@ -33,6 +33,10 @@ $(function() {
                     onSelect: function(dat,inst){
                     	
                         alert(dat);
+                        $.get("save_date.php?dat="+dat+"&cache="+Math.random()*1000000,function(data){
+                        	
+                        }
+
                     }
 });
 
