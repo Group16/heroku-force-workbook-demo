@@ -36,14 +36,6 @@ $(function() {
                         $.get("save_date.php?dat="+dat+"&cache="+Math.random()*1000000,function(data){
                         	alert(data);
 
-        jQuery.ajax({
-
-    data: { d: dat},
-        type: 'post',
-      url: "/",
-
-    });
-                        	
                         }
                         );
 
