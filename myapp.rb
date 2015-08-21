@@ -66,7 +66,7 @@ class MyApp < Sinatra::Base
   mntt =mnt.to_s.rjust(2,'0')
   dyy = dy.to_s.rjust(2,'0')
 
-#  d = "#{yr}-#{mntt}-#{dyy}"
+  d = "#{yr}-#{mntt}-#{dyy}"
   
   def create
   @sub_comment = SubComment.new params['subcomment']
